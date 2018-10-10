@@ -10,6 +10,13 @@ body{
   height: 100vh;
   width:100%;
 }
+@media (max-width:700px){
+  .page{
+    height: auto;
+    position: unset;
+    margin-bottom: 20%;
+  }
+}
 #previouspage{
   position: fixed;
   left: 0;
@@ -22,6 +29,8 @@ body{
   @media (max-width:700px){
     #previouspage{
       width: 13%;
+      position: unset;
+      float: left;
     }
   }
 #nextpage{
@@ -36,7 +45,37 @@ body{
   @media (max-width:700px){
     #nextpage{
       width: 13%;
+      position: unset;
+      float: right;
     }
+  }
+
+  .subtitlecontainer{
+    padding: 2%;
+  }
+  .subtitletext{
+    font-size: 30px;
+    font-family: 'Work Sans', sans-serif;
+    line-height: 32px;
+    font-weight:700;
+  }
+  .textcontainer{
+    padding: 0% 5%;
+    text-align: justify;
+  }
+    @media (max-width:700px){
+      .textcontainer{
+        padding: 5% 5%;
+      }
+    }
+  .text{
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+    line-height: 22px;
+  }
+  .text a{
+    text-decoration: none;
+    color: #00c9ff;
   }
 
 /* ---- PAGE 1 ---- */
@@ -47,6 +86,7 @@ body{
   display: inline-block;
   width:60vw;
   height: 100%;
+  z-index: -1;
 }
   @media (max-width:700px){
     #headerimage{
@@ -81,6 +121,7 @@ body{
   height: 100%;
   position: fixed;
   right: 0;
+  z-index: -1;
 }
   @media (max-width:700px){
     #headertext{
@@ -139,42 +180,95 @@ body{
 
 /* ---- PAGE 2 ---- */
 
-.subtitlecontainer{
-  padding: 2%;
+.speaker{
+  width: 24%;
 }
-.subtitletext{
-  font-size: 30px;
-  font-family: 'Work Sans', sans-serif;
-  line-height: 32px;
-  font-weight:700;
-}
-.textcontainer{
-  padding: 0% 5%;
-  text-align: justify;
-}
-.text{
-  font-size: 18px;
-  font-family: 'Roboto', sans-serif;
-  line-height: 22px;
-}
-.text a{
-  text-decoration: none;
-  color: #00c9ff;
-}
-/* .dancingspeaker{
-  animation: dance 5s 1 alternate ease-in-out;
-}
-@keyframes dance{
-  25%{
-    transform: rotate(20deg);
+  @media (max-width:700px){
+    .speaker{
+      width: 45%;
+    }
   }
-  50%{
-    transform: rotate(-20deg);
+
+/* ---- PAGE 3 ---- */
+
+#riseandshine{
+  position:fixed;
+  left:0;
+  width:50%;
+}
+@media (max-width:700px){
+  #riseandshine{
+    position: unset;
+    width: 100%;
   }
-  100%{
-    transform: rotate(0deg);
+}
+#page3text{
+  position:fixed;right:0;width:50%;background-color:#fff;padding:5%;
+}
+@media (max-width:700px){
+  #page3text{
+    position: unset;
+    width: auto;
   }
-} */
+}
+
+/* ---- PAGE 4 ---- */
+
+#page4text{
+  background-color: #fff;width: 40%;position: fixed;left: 0;padding: 5%;
+}
+@media (max-width:700px){
+  #page4text{
+    position: unset;
+    width: auto;
+  }
+}
+#applelistening{
+  position: fixed;top: 0;left: 0;width: 100%;height: 100%;z-index: -1;
+}
+@media (max-width:700px){
+  #applelistening{
+    position: unset;
+  }
+}
+
+/* ---- PAGE 5 ---- */
+#page5subtitle{
+  width:60%;
+}
+  @media (max-width:700px){
+    #page5subtitle{
+      width: auto;
+    }
+  }
+#page5text{
+  width: 50%;padding:0% 5%;
+}
+  @media (max-width:700px){
+    #page5text{
+      width: auto;
+    }
+  }
+#tweetcontainer{
+  position:fixed;right: 0;top: 0;width:30%;margin-right:5%;
+}
+  @media (max-width:700px){
+    #tweetcontainer{
+      position: unset;
+      width: auto;
+      margin: 0;
+    }
+  }
+.twitter-tweet-rendered{
+  width: auto !important;
+  margin: 5%;
+}
+
+/* ---- PAGE 6 ---- */
+
+#page6text{
+  padding:5% 5%;
+}
 #textsnippet{
   width: 80%;
   margin-left: auto;
@@ -192,10 +286,6 @@ body{
   line-height: 30px;
   font-weight:700;
 }
-.twitter-tweet-rendered{
-  width: auto !important;
-  margin: 5%;
-}
 .unexpanded{
   cursor: zoom-in;
 }
@@ -203,4 +293,67 @@ body{
   transform: scale(1.4);
   box-shadow: 0px 10px 8px 0px rgba(0,0,0,0.75);
   cursor: zoom-out;
+}
+
+/* ---- PAGE 8 ---- */
+#homepodlistening{
+  width:100%;height:60%;text-align:center;
+}
+#homepod{
+  height:100%;width:auto;
+}
+  @media (max-width:700px){
+    #homepod{
+      height: auto;
+      width: 80%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+
+/* ---- PAGE 9 ---- */
+#sirieyescontainer{
+  width:100%;height:60%;text-align:center;
+}
+#sirieyes{
+  height:100%;width:auto;
+}
+  @media (max-width:700px){
+    #sirieyes{
+      height: auto;
+      width: 80%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+
+/* ---- PAGE 11 ---- */
+
+.cdi{
+  width: 50%;background-color: #fff;
+}
+  @media (max-width:700px){
+    .cdi{
+      width:auto;
+    }
+  }
+.prototype{
+  position: fixed;top: 0;right: 0;width: 100%;height: 100%;text-align: right;z-index: -1;
+}
+  @media (max-width:700px){
+    .prototype{
+      position: unset;
+      text-align: center;
+    }
+  }
+.prototypeimage{
+  width: auto;height: 100%;
+}
+@media (max-width:700px){
+  .prototypeimage{
+    width: 80%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
