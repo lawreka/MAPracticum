@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+ <head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width,initial-scale=1">
+   <title>Somebody's watching me: embodying ethical design for smart speakers</title>
+   <meta name="author" content="Kathryn Lawrence">
+   <meta name="description" content="Embodying ethical design for smart speakers, practical component of my thesis for MA in Communications Design at HMKW 2018">
+   <link rel="stylesheet" href="stylesheet.css" type="text/css">
+   <link href="https://fonts.googleapis.com/css?family=Roboto|Work+Sans:700,900" rel="stylesheet">
+ </head>
+
+ <body>
+   <div class="page">
+     <div class="textcontainer" style="padding:5% 5%;">
+       <div class="text">
+         In the worst case scenario, users end up with technology in their homes that resemble the TeleScreens from George Orwell's 1984.
+         <br><br>
+         <div id="textsnippet">
+           <img id="nineteeneightyfour" class="unexpanded" src="assets/1984texthighlight.png" onClick="expand()">
+         </div>
+         <br><br>
+          This panopticonical effect of not knowing whether or not the device is listening becomes more unnerving than knowing for sure that the device is always on and listening. Although the majority of today's tech users are happy to sacrifice privacy for convenience and trust that Apple, Microsoft, Amazon, and Google won't collect their data or record their conversations in an unethical or secretive way, a more ethical design decision would make users more aware of the persistent surveillance capacity of these ubiquitous smart assistants.
+         <br><br>
+       </div>
+     </div>
+    <div id="previouspage">
+      <a href="page5.html">
+        <img style="width: 100%;" src="assets/leftarrow.png">
+      </a>
+    </div>
+    <div id="nextpage">
+      <a href="page7.html">
+        <img style="width: 100%;" src="assets/rightarrow.png">
+      </a>
+    </div>
+  </div>
+ </body>
+ <script type="text/javascript">
+  function expand(){
+    txt = document.getElementById("nineteeneightyfour");
+    if (txt.classList.contains("expanded")){
+      txt.classList.remove("expanded");
+    }
+    else{
+      txt.classList.add("expanded");
+    }
+  }
+ </script>
+</html>

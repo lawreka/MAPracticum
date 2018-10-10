@@ -7,46 +7,38 @@
    <meta name="author" content="Kathryn Lawrence">
    <meta name="description" content="Embodying ethical design for smart speakers, practical component of my thesis for MA in Communications Design at HMKW 2018">
    <link rel="stylesheet" href="stylesheet.css" type="text/css">
-   <link href="https://fonts.googleapis.com/css?family=Roboto|Work+Sans:900" rel="stylesheet">
-   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript"></script>
-   <script src="script.js" type="text/javascript"></script>
+   <link href="https://fonts.googleapis.com/css?family=Roboto|Work+Sans:700,900" rel="stylesheet">
  </head>
+
  <body>
    <div class="page">
-     <div class="titletext">
-       Somebody's watching me
+     <div id="headerimage">
+       <div class="imagecontainer">
+         <img class="googleygif" src="assets/google_home_eyes.gif">
+       </div>
      </div>
-     <div class="headerimage">
-       <img class="bigimage" src="assets/google_home_eyes.gif">
-     </div>
-     <div class="titletext">
-       Embodying ethical design for smart speakers
-     </div>
-   </div>
-   <div class="page">
-    <img src="assets/croppedsiriicon.png">
-    <img src="assets/croppedalexaicon.png">
-    <img src="assets/croppedgoogleicon.png">
-    <img src="assets/croppedcortanaicon.png">
-    <img src="assets/croppedapplespeakers.png">
-    <img src="assets/croppedalexaspeakers.png">
-    <img src="assets/croppedgooglespeakers.png">
-    <img src="assets/croppedcortanaspeaker.png">
+     <div id="headertext">
+       <div id="headertextcontainer">
+         <div class="titletext">
+           Somebody's watching me: embodying ethical design for smart speakers
+         </div>
+         <div class="infotext">
+           Kathryn Isabelle Lawrence<br>
+           HMKW Berlin 2018<br>
+           M. A. Communications Design<br>
+         </div>
+       </div>
     </div>
-    <div class="text">Siri, Alexa, Google, and Cortana are household names: these are the AI that are increasingly entering electronics consumers' homes as smart speakers provided by some of the biggest tech companies in the world. Apple, Amazon, Microsoft, and Google have all created personal assistant programs with conversational interfaces that can answer questions, read recipes, tell you the weather, play music and games, set alarms, and speak reminders, among many, many other features.
+    <div id="previouspage" style="display: none;">
+      <a href="#">
+        <img style="width: 100%;" src="assets/leftarrow.png">
+      </a>
     </div>
-   </div>
-   <div class="page">
-
-   </div>
+    <div id="nextpage">
+      <a href="page2.html">
+        <img style="width:100%;" src="assets/rightarrow.png">
+      </a>
+    </div>
+  </div>
  </body>
- <script type="text/javascript">
-  function autorun()
-  {
-
-  }
-  if (window.addEventListener) window.addEventListener("load", autorun, false);
-  else if (window.attachEvent) window.attachEvent("onload", autorun);
-  else window.onload = autorun;
- </script>
 </html>
